@@ -1,0 +1,15 @@
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.loaded {
+  width: 100%;
+}
+
+.loading {
+  display: none;
+}

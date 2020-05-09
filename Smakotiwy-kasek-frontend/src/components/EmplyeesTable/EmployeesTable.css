@@ -1,0 +1,19 @@
+.employee-list-table {
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  .employees-table td:nth-of-type(1):before {
+    content: "Nazwa użytkownika";
+  }
+  .employees-table td:nth-of-type(2):before {
+    content: "Adres email";
+  }
+  .employees-table td:nth-of-type(3):before {
+    content: "Adres";
+  }
+  .employees-table td:nth-of-type(4):before {
+    content: "Role";
+  }
+}

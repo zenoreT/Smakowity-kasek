@@ -1,0 +1,115 @@
+.menu-categories-view {
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.menu-category {
+  width: 33.3%;
+}
+
+.menu-category.no-padding .ant-card-body {
+  padding: 0;
+}
+
+.menu-category .ant-card-body {
+  position: relative;
+}
+
+.menu-category .menu-category-image {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.menu-category .menu-category-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-category-loading {
+  display: none;
+}
+
+.menu-category-loader-wrapper {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-category-loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #8ae6ff;
+  background: -moz-linear-gradient(left, #8ae6ff 10%, rgba(74, 208, 188, 0) 42%);
+  background: -webkit-linear-gradient(left, #8ae6ff 10%, rgba(74, 208, 188, 0) 42%);
+  background: -o-linear-gradient(left, #8ae6ff 10%, rgba(74, 208, 188, 0) 42%);
+  background: -ms-linear-gradient(left, #8ae6ff 10%, rgba(74, 208, 188, 0) 42%);
+  background: linear-gradient(to right, #8ae6ff 10%, rgba(74, 208, 188, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.menu-category-loader:before {
+  width: 50%;
+  height: 50%;
+  background: #8ae6ff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.menu-category-loader:after {
+  background: #fff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-category {
+    width: 50%;
+  }
+}

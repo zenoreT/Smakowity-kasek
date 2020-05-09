@@ -1,0 +1,30 @@
+.login-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.ant-form.login-form > * {
+  width: 350px;
+  margin: auto;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+.login-form-suffix {
+  float: right;
+}
+
+@media screen and (max-width: 450px) {
+  .ant-form.login-form > * {
+    width: 100%;
+  }
+}

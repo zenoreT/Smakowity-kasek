@@ -1,0 +1,57 @@
+.meal-set-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+}
+
+.ant-form.meal-set-form {
+  width: 50%;
+  margin: auto;
+}
+
+.form-type {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-set-form-button {
+  width: 100%;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-form-item-children .ant-upload-picture-card-wrapper {
+  width: 100%;
+}
+
+.ant-form-item-children .ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item {
+  width: 100%;
+  height: 220px;
+  margin: 0;
+}
+
+.ant-upload-list.ant-upload-list-picture-card .ant-upload-list-item .ant-upload-list-item-thumbnail {
+  width: 60%;
+  margin: auto;
+}
+
+.ant-upload.ant-upload-select.ant-upload-select-picture-card {
+  width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+  .ant-form.meal-set-form {
+    max-width: 100%;
+  }
+}

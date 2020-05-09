@@ -1,0 +1,13 @@
+.ingredient-list-table {
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  .ingredients-table td:nth-of-type(1):before {
+    content: "Nazwa";
+  }
+  .ingredients-table td:nth-of-type(2):before {
+    content: "Data aktualizacji";
+  }
+}

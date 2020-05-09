@@ -1,0 +1,158 @@
+.items-list {
+  border: 1px solid #e8e8e8;
+}
+
+.ant-card.ant-card-bordered.ant-card-hoverable.cart-card {
+  cursor: auto;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item .item {
+  display: flex;
+  align-items: center;
+}
+
+.item-description {
+  display: flex;
+  align-items: center;
+}
+
+.list-item .item > * {
+  margin-left: 15px;
+}
+
+.list-item .item-description > * {
+  margin-left: 15px;
+}
+
+.item-group {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 66%;
+  justify-content: space-between;
+  /* margin: 0 10%; */
+}
+
+.item-group > .item:first-child {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.item-group > .item:last-child {
+  display: flex;
+  margin-right: 20px;
+  justify-content: flex-end;
+}
+
+.item-price-wrapper {
+  min-width: 100px;
+  text-align: right;
+}
+
+.cart-item-image {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.ant-list-item {
+  padding: 0px;
+  margin: 5px;
+}
+
+.anticon.anticon-delete {
+  font-size: 25px;
+}
+
+.item-price {
+  font-size: 18px;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-footer > * {
+  margin-right: 10px;
+}
+
+.cart-footer > button {
+  width: 200px;
+}
+
+.price-summary {
+  margin-right: 10px;
+}
+
+.order-summary {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1050px) {
+  .cart-item-image {
+    width: 90%;
+    height: 250px;
+    object-fit: contain;
+  }
+
+  .list-item {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .list-item .item {
+    margin: 2px 10px;
+  }
+
+  .list-item .item > * {
+    flex-direction: column;
+    margin-left: 6px;
+  }
+
+  .list-item .item > i {
+    margin-left: 15px;
+  }
+
+  .list-item .item > .item-description {
+    margin-left: 0px;
+  }
+
+  .list-item .item-description > * {
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+
+  .item-price-wrapper {
+    min-width: 20px;
+    text-align: left;
+  }
+
+  .item-group > .item {
+    margin: 0 25px;
+  }
+
+  .item-group > .item:last-child {
+    margin-right: auto;
+  }
+
+  .cart-footer {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cart-item-image {
+    height: 200px;
+  }
+}

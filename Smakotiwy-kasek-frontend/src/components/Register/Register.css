@@ -1,0 +1,43 @@
+.register-view-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.register-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.register-view.bordered {
+  border: 1px solid #e8e8e8;
+  padding: 10px;
+}
+
+.register-view.bordered.smaller {
+  height: 85%;
+}
+
+.ant-form.register-form > * {
+  width: 350px;
+  margin: auto;
+}
+
+.register-form-button {
+  width: 100%;
+}
+
+.register-form-suffix {
+  float: right;
+}
+
+@media screen and (max-width: 450px) {
+  .register-view.bordered.smaller {
+    height: 75%;
+  }
+  .ant-form.register-form > * {
+    width: 100%;
+  }
+}
